@@ -1,0 +1,234 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version S-2021.09_Full64 -- Mon Sep 26 11:48:13 2022
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'testfixture.v'
+Parsing design file 'LBP_syn.v'
+Parsing library file '/cad/CBDK/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v'
+Top Level Modules:
+       testfixture
+TimeScale is 1 ns / 1 ps
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "./LBP_syn.sdf"
+   ***    Annotation scope: testfixture.LBP
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+maxdelays compiled, MAXIMUM delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Mon Sep 26 11:48:23 2022
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9323
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[10] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9338
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[0] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9353
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[8] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9368
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[12] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9383
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[7] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9398
+module: DFFQX2, "instance: testfixture.LBP.\addr_reg[6] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9413
+module: DFFQX1, "instance: testfixture.LBP.\gray_addr_reg[13] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9428
+module: DFFQX1, "instance: testfixture.LBP.\lbp_addr_reg[13] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9443
+module: DFFQX1, "instance: testfixture.LBP.\lbp_addr_reg[12] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+
+Warning-[SDFCOM_NNTC] Need timing check option +neg_tchk
+./LBP_syn.sdf, 9458
+module: DFFQX1, "instance: testfixture.LBP.\lbp_addr_reg[11] "
+  SDF Error: Negative HOLD value replaced by 0.          
+  Add +neg_tchk to consider Negative delay value.
+
+All future errors not reported; use +sdfverbose to report them.
+
+          Total errors: 130
+          Total warnings: 0
+   ***    SDF annotation completed: Mon Sep 26 11:48:23 2022
+
+
+Starting vcs inline pass...
+33 modules and 1 UDP read.
+recompiling module testfixture
+recompiling module LBP
+recompiling module INVXL
+recompiling module AOI21XL
+recompiling module AOI211XL
+recompiling module AOI22XL
+recompiling module AOI222XL
+recompiling module AOI2BB1X1
+recompiling module AO21X1
+recompiling module AO22X1
+recompiling module NAND2XL
+recompiling module NAND3XL
+recompiling module NAND4XL
+recompiling module NAND2BX1
+recompiling module NAND3BX1
+recompiling module NAND4BBXL
+recompiling module NOR2XL
+recompiling module NOR3XL
+recompiling module NOR4XL
+recompiling module OR2X4
+recompiling module OAI21XL
+recompiling module OAI211XL
+recompiling module OAI22XL
+recompiling module OAI31XL
+recompiling module OAI2BB1XL
+recompiling module OA21XL
+recompiling module OA22X1
+recompiling module XOR2X1
+recompiling module XNOR2X1
+recompiling module CLKBUFX3
+recompiling module CLKAND2X8
+recompiling module DFFQX4
+32 of 33 modules done
+	However, due to incremental compilation, only 32 modules need to be compiled. 
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2021.09/linux64/lib -L/usr/cad/synopsys/vcs/2021.09/linux64/lib  -Wl,-rpath-link=./ -Wl,--no-as-needed  /usr/lib64/libnuma.so.1     _15789_archive_1.so _prev_archive_1.so _cuarc0.so objs/udps/exIG1.o  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2021.09/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2021.09/linux64/lib/vcs_save_restore_new.o /cad/synopsys/verdi/cur//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Chronologic VCS simulator copyright 1991-2021
+Contains Synopsys proprietary information.
+Compiler version S-2021.09_Full64; Runtime version S-2021.09_Full64;  Sep 26 11:48 2022
+Doing SDF annotation ...... Done
+*Verdi* Loading libsscore_vcs202109.so
+FSDB Dumper for VCS, Release Verdi_S-2021.09, Linux x86_64/64bit, 08/29/2021
+(C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Output pixel: 0 ~           0 are correct!
+
+Output pixel: 0 ~        1000 are correct!
+
+Output pixel: 0 ~        2000 are correct!
+
+Output pixel: 0 ~        3000 are correct!
+
+Output pixel: 0 ~        4000 are correct!
+
+Output pixel: 0 ~        5000 are correct!
+
+Output pixel: 0 ~        6000 are correct!
+
+Output pixel: 0 ~        7000 are correct!
+
+Output pixel: 0 ~        8000 are correct!
+
+Output pixel: 0 ~        9000 are correct!
+
+Output pixel: 0 ~       10000 are correct!
+
+Output pixel: 0 ~       11000 are correct!
+
+Output pixel: 0 ~       12000 are correct!
+
+Output pixel: 0 ~       13000 are correct!
+
+Output pixel: 0 ~       14000 are correct!
+
+Output pixel: 0 ~       15000 are correct!
+
+Output pixel: 0 ~       16000 are correct!
+
+Output pixel: 0 ~       16383 are correct!
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+$finish called from file "testfixture.v", line 128.
+$finish at simulation time            960170000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 960170000 ps
+CPU Time:      3.060 seconds;       Data structure size:   0.2Mb
+Mon Sep 26 11:49:00 2022
+CPU time: .424 seconds to compile + .145 seconds to elab + .221 seconds to link + 3.094 seconds in simulation
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)

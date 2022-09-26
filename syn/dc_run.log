@@ -1,0 +1,894 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version S-2021.06-SP2 for linux64 - Aug 24, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+#Read All Files
+read_file -format verilog  LBP.v
+Loading db file '/cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+Loading db file '/usr/cad/synopsys/synthesis/2021.06-sp2/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/2021.06-sp2/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2021.06-sp2/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'gtech'
+Loading verilog file '/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v
+Warning:  /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v:38: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v:39: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v:40: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v:168: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 55 in file
+	'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            56            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 79 in file
+	'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            85            |     no/auto      |
+|            97            |    auto/auto     |
+|           106            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 166 in file
+	'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           171            |    auto/auto     |
+|           186            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LBP line 50 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    cur_state_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LBP line 79 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    gray_addr_reg    | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|       cnt_reg       | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LBP line 129 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      addr_reg       | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LBP line 140 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    gray_req_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LBP line 149 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    lbp_data_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    lbp_addr_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|    lbp_valid_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LBP line 166 in file
+		'/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     kernel_reg      | Flip-flop |  72   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.db:LBP'
+Loaded 1 design.
+Current design is 'LBP'.
+LBP
+#read_file -format sverilog  LBP.v
+current_design LBP
+Current design is 'LBP'.
+{LBP}
+link
+
+  Linking design 'LBP'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LBP                         /home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP.db
+  slow (library)              /cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2021.06-sp2/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose LBP.sdc
+# operating conditions and boundary conditions #
+set cycle  10         ;#clock period defined by designer
+10
+create_clock -period $cycle [get_ports  clk]
+1
+set_dont_touch_network      [get_clocks clk]
+1
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+1
+set_output_delay 0.5    -clock clk [all_outputs] 
+1
+set_load         1     [all_outputs]
+1
+set_drive        1     [all_inputs]
+1
+set_operating_conditions -max_library slow -max slow
+Using operating conditions 'slow' found in library 'slow'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     S-2021.06-SP2
+Date:        Mon Sep 26 11:46:23 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              13
+    Cells do not drive (LINT-1)                                    13
+--------------------------------------------------------------------------------
+
+Warning: In design 'LBP', cell 'C2353' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2354' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2373' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2374' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2413' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2414' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2415' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2416' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2417' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2418' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2419' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2431' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2432' does not drive any nets. (LINT-1)
+1
+set high_fanout_net_threshold 0
+0
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+#Synthesis all design
+#compile -map_effort high -area_effort high
+#compile -map_effort high -area_effort high -inc
+compile_ultra -area_high_effort_script 
+Warning: The -area_high_effort_script option is ignored. To enable further area optimization, use the optimize_netlist -area command. (OPT-1341)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.2 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.2 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 13 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'LBP'
+
+Loaded alib file './alib-52/slow.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LBP'
+Information: Added key list 'DesignWare' to design 'LBP'. (DDB-72)
+ Implement Synthetic for 'LBP'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03   14747.0      0.00       0.0   28429.6                           13821380.0000
+    0:00:03   14716.5      3.00     143.8   28945.1                           13809892.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:03   14908.3      0.00       0.0   28368.3                           14066167.0000
+    0:00:03   14908.3      0.00       0.0   28368.3                           14066167.0000
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:03    8038.9      0.91       9.0   41433.5                           4695507.0000
+    0:00:03    8101.7      0.00       0.0   38629.5                           4772529.0000
+    0:00:03    8101.7      0.00       0.0   38629.5                           4772529.0000
+    0:00:03    8101.7      0.00       0.0   38629.5                           4772529.0000
+    0:00:03    8089.8      0.00       0.0   38629.5                           4771258.0000
+    0:00:03    8089.8      0.00       0.0   38629.5                           4771258.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:03    8066.0      0.00       0.0   38625.2                           4717135.5000
+    0:00:03    8066.0      0.00       0.0   38625.2                           4717135.5000
+    0:00:03    8066.0      0.00       0.0   38625.2                           4717135.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    8066.0      0.00       0.0   38624.6                           4700022.5000
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:03    8726.3      0.00       0.0       0.0                           5489453.0000
+    0:00:03    8726.3      0.00       0.0       0.0                           5489453.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    8726.3      0.00       0.0       0.0                           5489453.0000
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:00:03    8758.6      0.00       0.0       0.0                           5383509.0000
+    0:00:03    8758.6      0.00       0.0       0.0                           5383509.0000
+    0:00:03    8758.6      0.00       0.0       0.0                           5383509.0000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04    8758.6      0.00       0.0       0.0                           5382466.5000
+    0:00:04    8678.8      0.00       0.0       0.0                           5315449.5000
+    0:00:04    8678.8      0.00       0.0       0.0                           5315449.5000
+    0:00:04    8678.8      0.00       0.0       0.0                           5315449.5000
+    0:00:04    8678.8      0.00       0.0       0.0                           5315449.5000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8650.0      0.00       0.0       0.0                           5274255.0000
+    0:00:04    8610.9      0.00       0.0       0.0                           5254996.0000
+Loading db file '/cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+write -format ddc     -hierarchy -output "LBP_syn.ddc"
+Writing ddc file 'LBP_syn.ddc'.
+1
+write_sdf -version 1.0  LBP_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write -format verilog -hierarchy -output LBP_syn.v
+Writing verilog file '/home/g111064091/Desktop/ic_contest/grad/cic_2016_grad_cell/Exercise/LBP_syn.v'.
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  LBP_syn.qor
+dc_shell> repo
+report_activity                            
+report_annotated_check                     
+report_annotated_delay                     
+report_annotated_transition                
+report_app_var                             
+report_area                                
+report_attribute                           
+report_attributes                          
+report_auto_ungroup                        
+report_autofix_configuration               
+report_autofix_element                     
+report_background_jobs                     
+report_bist_configuration                  
+report_block_abstraction                   
+report_boundary_cell                       
+report_boundary_cell_io                    
+report_bsd_ac_port                         
+report_bsd_buffers                         
+report_bsd_compliance                      
+report_bsd_configuration                   
+report_bsd_instruction                     
+report_bsd_linkage_port                    
+report_bsd_patterns                        
+report_bsd_power_up_reset                  
+report_buffer_tree                         
+report_buffer_tree_qor                     
+report_bus                                 
+report_cache                               
+report_case_analysis                       
+report_cell                                
+report_cell_mode                           
+report_check_library_options               
+report_clock                               
+report_clock_constraint                    
+report_clock_fanout                        
+report_clock_gating                        
+report_clock_gating_check                  
+report_clock_timing                        
+report_clock_tree                          
+report_clocks                              
+report_collection                          
+report_compile_options                     
+report_compile_spg_mode                    
+report_constraint                          
+report_constraints                         
+report_cross_probing                       
+report_cross_probing_files                 
+report_crpr                                
+report_datapath_gating                     
+report_delay_calculation                   
+report_design                              
+report_design_lib                          
+report_dft_clock_controller                
+report_dft_clock_gating_configuration      
+report_dft_clock_gating_pin                
+report_dft_configuration                   
+report_dft_connect                         
+report_dft_design                          
+report_dft_drc_rules                       
+report_dft_drc_violations                  
+report_dft_equivalent_signals              
+report_dft_fabric_configuration            
+report_dft_hierarchical_pins               
+report_dft_insertion_configuration         
+report_dft_location                        
+report_dft_partition                       
+report_dft_power_control                   
+report_dft_signal                          
+report_direct_power_rail_tie               
+report_disable_timing                      
+report_dont_touch                          
+report_dp_smartgen_options                 
+report_fsm                                 
+report_heterogeneous_fanout                
+report_hierarchy                           
+report_host_options                        
+report_ideal_network                       
+report_ieee_1500_configuration             
+report_inbound_cell                        
+report_interclock_relation                 
+report_internal_loads                      
+report_isolate_ports                       
+report_isolation_cell                      
+report_latch_loop_groups                   
+report_level_shifter                       
+report_lib                                 
+report_link_library_subset                 
+report_logic_lock_configuration            
+report_logicbist_configuration             
+report_min_pulse_width                     
+report_mis_violation_summary               
+report_mode                                
+report_multibit                            
+report_multibit_banking                    
+report_mv_library_cells                    
+report_mw_lib                              
+report_name_rules                          
+report_names                               
+report_net                                 
+report_net_fanout                          
+report_obfuscation_configuration           
+report_ocvm                                
+report_opcond_inference                    
+report_operating_conditions                
+report_partitions                          
+report_pass_data                           
+report_path_budget                         
+report_path_group                          
+report_pin_map                             
+report_pin_name_synonym                    
+report_pipeline_scan_data_configuration    
+report_port                                
+report_power                               
+report_power_calculation                   
+report_power_derate                        
+report_power_domain                        
+report_power_gating                        
+report_power_model                         
+report_power_pin_info                      
+report_power_switch                        
+report_preserve_user_attribute             
+report_pst                                 
+report_qor                                 
+report_qtm_model                           
+report_reference                           
+report_resources                           
+report_retention_cell                      
+report_retention_clamp_cell                
+report_saif                                
+report_scaling_lib_group                   
+report_scan_cell_set                       
+report_scan_chain                          
+report_scan_compression_configuration      
+report_scan_configuration                  
+report_scan_group                          
+report_scan_link                           
+report_scan_path                           
+report_scan_register_type                  
+report_scan_replacement                    
+report_scan_skew_group                     
+report_scan_state                          
+report_scan_suppress_toggling              
+report_script_runtime                      
+report_security_configuration              
+report_security_lock                       
+report_serialize_configuration             
+report_size_only                           
+report_streaming_compression_configuration 
+report_supply_net                          
+report_supply_port                         
+report_synlib                              
+report_synlib_history                      
+report_synthetic                           
+report_target_library_subset               
+report_test_assume                         
+report_test_model                          
+report_test_point_configuration            
+report_test_point_element                  
+report_test_power_modes                    
+report_testability_configuration           
+report_threshold_voltage_group             
+report_timing                              
+report_timing_derate                       
+report_timing_requirements                 
+report_top_implementation_options          
+report_transitive_fanin                    
+report_transitive_fanout                   
+report_units                               
+report_upf_cell_mismatch                   
+report_use_test_model                      
+report_watermark_configuration             
+report_wire_load                           
+report_wrapper_configuration               
+report_write_lib_mode                      
+dc_shell> report_area 
+ 
+****************************************
+Report : area
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Mon Sep 26 11:48:00 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           50
+Number of nets:                           818
+Number of cells:                          807
+Number of combinational cells:            677
+Number of sequential cells:               130
+Number of macros/black boxes:               0
+Number of buf/inv:                        196
+Number of references:                      65
+
+Combinational area:               5265.334841
+Buf/Inv area:                     1283.234425
+Noncombinational area:            3345.575457
+Macro/Black Box area:                0.000000
+Net Interconnect area:           96040.485931
+
+Total cell area:                  8610.910298
+Total area:                     104651.396229
+1
+dc_shell> repo
+report_activity                            
+report_annotated_check                     
+report_annotated_delay                     
+report_annotated_transition                
+report_app_var                             
+report_area                                
+report_attribute                           
+report_attributes                          
+report_auto_ungroup                        
+report_autofix_configuration               
+report_autofix_element                     
+report_background_jobs                     
+report_bist_configuration                  
+report_block_abstraction                   
+report_boundary_cell                       
+report_boundary_cell_io                    
+report_bsd_ac_port                         
+report_bsd_buffers                         
+report_bsd_compliance                      
+report_bsd_configuration                   
+report_bsd_instruction                     
+report_bsd_linkage_port                    
+report_bsd_patterns                        
+report_bsd_power_up_reset                  
+report_buffer_tree                         
+report_buffer_tree_qor                     
+report_bus                                 
+report_cache                               
+report_case_analysis                       
+report_cell                                
+report_cell_mode                           
+report_check_library_options               
+report_clock                               
+report_clock_constraint                    
+report_clock_fanout                        
+report_clock_gating                        
+report_clock_gating_check                  
+report_clock_timing                        
+report_clock_tree                          
+report_clocks                              
+report_collection                          
+report_compile_options                     
+report_compile_spg_mode                    
+report_constraint                          
+report_constraints                         
+report_cross_probing                       
+report_cross_probing_files                 
+report_crpr                                
+report_datapath_gating                     
+report_delay_calculation                   
+report_design                              
+report_design_lib                          
+report_dft_clock_controller                
+report_dft_clock_gating_configuration      
+report_dft_clock_gating_pin                
+report_dft_configuration                   
+report_dft_connect                         
+report_dft_design                          
+report_dft_drc_rules                       
+report_dft_drc_violations                  
+report_dft_equivalent_signals              
+report_dft_fabric_configuration            
+report_dft_hierarchical_pins               
+report_dft_insertion_configuration         
+report_dft_location                        
+report_dft_partition                       
+report_dft_power_control                   
+report_dft_signal                          
+report_direct_power_rail_tie               
+report_disable_timing                      
+report_dont_touch                          
+report_dp_smartgen_options                 
+report_fsm                                 
+report_heterogeneous_fanout                
+report_hierarchy                           
+report_host_options                        
+report_ideal_network                       
+report_ieee_1500_configuration             
+report_inbound_cell                        
+report_interclock_relation                 
+report_internal_loads                      
+report_isolate_ports                       
+report_isolation_cell                      
+report_latch_loop_groups                   
+report_level_shifter                       
+report_lib                                 
+report_link_library_subset                 
+report_logic_lock_configuration            
+report_logicbist_configuration             
+report_min_pulse_width                     
+report_mis_violation_summary               
+report_mode                                
+report_multibit                            
+report_multibit_banking                    
+report_mv_library_cells                    
+report_mw_lib                              
+report_name_rules                          
+report_names                               
+report_net                                 
+report_net_fanout                          
+report_obfuscation_configuration           
+report_ocvm                                
+report_opcond_inference                    
+report_operating_conditions                
+report_partitions                          
+report_pass_data                           
+report_path_budget                         
+report_path_group                          
+report_pin_map                             
+report_pin_name_synonym                    
+report_pipeline_scan_data_configuration    
+report_port                                
+report_power                               
+report_power_calculation                   
+report_power_derate                        
+report_power_domain                        
+report_power_gating                        
+report_power_model                         
+report_power_pin_info                      
+report_power_switch                        
+report_preserve_user_attribute             
+report_pst                                 
+report_qor                                 
+report_qtm_model                           
+report_reference                           
+report_resources                           
+report_retention_cell                      
+report_retention_clamp_cell                
+report_saif                                
+report_scaling_lib_group                   
+report_scan_cell_set                       
+report_scan_chain                          
+report_scan_compression_configuration      
+report_scan_configuration                  
+report_scan_group                          
+report_scan_link                           
+report_scan_path                           
+report_scan_register_type                  
+report_scan_replacement                    
+report_scan_skew_group                     
+report_scan_state                          
+report_scan_suppress_toggling              
+report_script_runtime                      
+report_security_configuration              
+report_security_lock                       
+report_serialize_configuration             
+report_size_only                           
+report_streaming_compression_configuration 
+report_supply_net                          
+report_supply_port                         
+report_synlib                              
+report_synlib_history                      
+report_synthetic                           
+report_target_library_subset               
+report_test_assume                         
+report_test_model                          
+report_test_point_configuration            
+report_test_point_element                  
+report_test_power_modes                    
+report_testability_configuration           
+report_threshold_voltage_group             
+report_timing                              
+report_timing_derate                       
+report_timing_requirements                 
+report_top_implementation_options          
+report_transitive_fanin                    
+report_transitive_fanout                   
+report_units                               
+report_upf_cell_mismatch                   
+report_use_test_model                      
+report_watermark_configuration             
+report_wire_load                           
+report_wrapper_configuration               
+report_write_lib_mode                      
+dc_shell> report_tim
+report_timing              report_timing_requirements 
+report_timing_derate       
+dc_shell> report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LBP
+Version: S-2021.06-SP2
+Date   : Mon Sep 26 11:48:04 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: addr_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 r
+  reset (in)                               0.13       5.63 r
+  U533/Y (INVX3)                           0.24       5.87 f
+  U541/Y (NAND2X1)                         0.46       6.33 r
+  U885/Y (OR2X4)                           0.48       6.81 r
+  U530/Y (INVX3)                           0.47       7.28 f
+  U545/Y (NOR2XL)                          0.50       7.78 r
+  U573/Y (BUFX4)                           0.67       8.45 r
+  U899/Y (CLKINVX1)                        0.66       9.11 f
+  U900/Y (OA21XL)                          0.52       9.62 f
+  U1138/Y (NAND2BX1)                       0.31       9.93 f
+  U719/Y (OAI211XL)                        0.30      10.23 r
+  addr_reg[9]/D (DFFQX1)                   0.00      10.23 r
+  data arrival time                                  10.23
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  addr_reg[9]/CK (DFFQX1)                  0.00      10.40 r
+  library setup time                      -0.16      10.24
+  data required time                                 10.24
+  -----------------------------------------------------------
+  data required time                                 10.24
+  data arrival time                                 -10.23
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
+dc_shell> exit
+
+Memory usage for this session 191 Mbytes.
+Memory usage for this session including child processes 191 Mbytes.
+CPU usage for this session 44 seconds ( 0.01 hours ).
+Elapsed time for this session 208 seconds ( 0.06 hours ).
+
+Thank you...
